@@ -1,0 +1,9 @@
+forge-std/=lib/forge-std/src/
+@chainlink/=lib/chainlink-brownie-contracts/contracts/src/
+@layerzero-contracts/=lib/solidity-examples/contracts/
+
+@openzeppelin/contracts/=lib/solidity-examples/node_modules/@openzeppelin/contracts/
+@openzeppelinV5/=lib/openzeppelin-contracts/
+
+@solady/=lib/solady/src/
+@solmate/=lib/solmate/src/

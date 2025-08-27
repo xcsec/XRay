@@ -1,0 +1,30 @@
+{
+  "name": "@bridge/subgraph",
+  "version": "1.0.0",
+  "dependencies": {
+    "@graphprotocol/graph-cli": "0.21.1",
+    "@graphprotocol/graph-ts": "0.20.1"
+  },
+  "license": "MIT",
+  "scripts": {
+    "auth": "graph auth https://api.thegraph.com/deploy/ $GRAPH_ACCESS_TOKEN",
+    "codegen": "graph codegen --output-dir src/types/",
+    "build": "graph build",
+    "compile": "yarn codegen && yarn build",
+    "prepare-bsc-polis": "mustache config/bsc-polis.json subgraph.template.yaml > subgraph.yaml",
+    "deploy-bsc-polis": "graph create --node https://graph.polis.tech/deploy/ polischain/bsc-to-polis-bridge && graph deploy polischain/bsc-to-polis-bridge --ipfs  https://ipfs.polis.tech/ --node  https://graph.polis.tech/deploy/",
+    "prepare-mainnet-polis": "mustache config/mainnet-polis.json subgraph.template.yaml > subgraph.yaml",
+    "deploy-mainnet-polis": "graph create --node https://graph.polis.tech/deploy/ polischain/mainnet-to-polis-bridge && graph deploy polischain/mainnet-to-polis-bridge --ipfs  https://ipfs.polis.tech/ --node  https://graph.polis.tech/deploy/",
+    "prepare-iotex-polis": "mustache config/iotex-polis.json subgraph.template.yaml > subgraph.yaml",
+    "deploy-iotex-polis": "graph create --node https://graph.polis.tech/deploy/ polischain/iotex-to-polis-bridge && graph deploy polischain/iotex-to-polis-bridge --ipfs  https://ipfs.polis.tech/ --node  https://graph.polis.tech/deploy/",
+    "prepare-polis-bsc": "mustache config/polis-bsc.json subgraph.template.yaml > subgraph.yaml",
+    "deploy-polis-bsc": "graph deploy polischain/polis-to-bsc-bridge --ipfs https://api.thegraph.com/ipfs/ --node https://api.thegraph.com/deploy/",
+    "prepare-polis-mainnet": "mustache config/polis-mainnet.json subgraph.template.yaml > subgraph.yaml",
+    "deploy-polis-mainnet": "graph deploy polischain/polis-to-mainnet --ipfs https://api.thegraph.com/ipfs/ --node https://api.thegraph.com/deploy/",
+    "prepare-polis-iotex": "mustache config/polis-iotex.json subgraph.template.yaml > subgraph.yaml",
+    "deploy-polis-iotex": "graph create --node https://iotex-graph.acheron.exchange/deploy polischain/polis-to-iotex-bridge && graph deploy polischain/polis-to-iotex-bridge --ipfs https://ipfs.acheron.exchange/ --node https://iotex-graph.acheron.exchange/deploy"
+  },
+  "devDependencies": {
+    "mustache": "4.2.0"
+  }
+}

@@ -1,0 +1,25 @@
+node_modules/
+hardhat.config.js
+/test/RPC_DATA
+
+node_modules
+.env
+coverage
+coverage.json
+typechain
+typechain-types
+
+#Hardhat files
+cache
+artifacts
+
+.yalc
+.openzeppelin/
+
+
+.DS_Store
+
+# Idea
+.idea
+.vscode/
+scripts/lab/

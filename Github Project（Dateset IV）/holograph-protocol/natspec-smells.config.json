@@ -1,0 +1,5 @@
+{
+    "include": "src/**/*.sol",
+    "exclude": "(test|scripts|lib|node_modules)/**/*.sol",
+    "enforceInheritdoc": false
+}

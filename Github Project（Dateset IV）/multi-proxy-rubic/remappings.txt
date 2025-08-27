@@ -1,0 +1,11 @@
+create3-factory/=lib/create3-factory/src/
+ds-test/=lib/ds-test/src/
+eth-gas-reporter/=node_modules/eth-gas-reporter/
+forge-std/=lib/forge-std/src/
+hardhat-deploy/=node_modules/hardhat-deploy/
+hardhat/=node_modules/hardhat/
+solmate/=lib/solmate/src/
+
+rubic/=src/
+celer-network/=lib/sgn-v2-contracts/
+test/=test/

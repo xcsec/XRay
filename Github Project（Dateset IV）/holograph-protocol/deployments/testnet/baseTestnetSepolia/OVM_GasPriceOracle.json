@@ -1,0 +1,493 @@
+{
+  "address": "0x5230210c2b4995FD5084b0F5FD0D7457aebb5010",
+  "abi": [
+    {
+      "inputs": [],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "DecimalsUpdated",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "GasPriceUpdated",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "L1BaseFeeUpdated",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "OverheadUpdated",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "name": "ScalarUpdated",
+      "type": "event"
+    },
+    {
+      "inputs": [],
+      "name": "admin",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "target",
+          "type": "address"
+        },
+        {
+          "internalType": "bytes",
+          "name": "data",
+          "type": "bytes"
+        }
+      ],
+      "name": "adminCall",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "decimals",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "gasPrice",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "getAdmin",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "adminAddress",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes",
+          "name": "_data",
+          "type": "bytes"
+        }
+      ],
+      "name": "getL1Fee",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes",
+          "name": "_data",
+          "type": "bytes"
+        }
+      ],
+      "name": "getL1GasUsed",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes",
+          "name": "initPayload",
+          "type": "bytes"
+        }
+      ],
+      "name": "init",
+      "outputs": [
+        {
+          "internalType": "bytes4",
+          "name": "",
+          "type": "bytes4"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "l1BaseFee",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "overhead",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "scalar",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "adminAddress",
+          "type": "address"
+        }
+      ],
+      "name": "setAdmin",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_decimals",
+          "type": "uint256"
+        }
+      ],
+      "name": "setDecimals",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_gasPrice",
+          "type": "uint256"
+        }
+      ],
+      "name": "setGasPrice",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_baseFee",
+          "type": "uint256"
+        }
+      ],
+      "name": "setL1BaseFee",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_overhead",
+          "type": "uint256"
+        }
+      ],
+      "name": "setOverhead",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "_scalar",
+          "type": "uint256"
+        }
+      ],
+      "name": "setScalar",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "transactionHash": "0x475f85db838ef105677c2159cad51fd8b6ad15470e0bc6f0542612b67173d2f2",
+  "receipt": {
+    "to": "0x2694a14ea8D91F4CC314A3dBe8819eaadb7E025E",
+    "from": "0xBB566182f35B9E5Ae04dB02a5450CC156d2f89c1",
+    "contractAddress": null,
+    "transactionIndex": 1,
+    "gasUsed": "1139313",
+    "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000004000000000000000000000002000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000080000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000040000000000000000000000000000000000000000000000000000000000000000",
+    "blockHash": "0x3ad688c931254676181a7f7a09e8fed93ab8cb3a9973e41586bc5f93e8be5d3d",
+    "transactionHash": "0x475f85db838ef105677c2159cad51fd8b6ad15470e0bc6f0542612b67173d2f2",
+    "logs": [
+      {
+        "transactionIndex": 1,
+        "blockNumber": 4896762,
+        "transactionHash": "0x475f85db838ef105677c2159cad51fd8b6ad15470e0bc6f0542612b67173d2f2",
+        "address": "0x2694a14ea8D91F4CC314A3dBe8819eaadb7E025E",
+        "topics": [
+          "0x8ffcdc15a283d706d38281f500270d8b5a656918f555de0913d7455e3e6bc1bf"
+        ],
+        "data": "0x0000000000000000000000005230210c2b4995fd5084b0f5fd0d7457aebb5010",
+        "logIndex": 0,
+        "blockHash": "0x3ad688c931254676181a7f7a09e8fed93ab8cb3a9973e41586bc5f93e8be5d3d"
+      }
+    ],
+    "blockNumber": 4896762,
+    "cumulativeGasUsed": "1186202",
+    "status": 1,
+    "byzantium": true
+  },
+  "args": [],
+  "numDeployments": 1,
+  "solcInputHash": "c3a76247290deaf8c75360db19ab47a7",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.13+commit.abaa5c0e\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"DecimalsUpdated\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"GasPriceUpdated\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"L1BaseFeeUpdated\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"OverheadUpdated\",\"type\":\"event\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"name\":\"ScalarUpdated\",\"type\":\"event\"},{\"inputs\":[],\"name\":\"admin\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"target\",\"type\":\"address\"},{\"internalType\":\"bytes\",\"name\":\"data\",\"type\":\"bytes\"}],\"name\":\"adminCall\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"decimals\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"gasPrice\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"getAdmin\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"adminAddress\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes\",\"name\":\"_data\",\"type\":\"bytes\"}],\"name\":\"getL1Fee\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes\",\"name\":\"_data\",\"type\":\"bytes\"}],\"name\":\"getL1GasUsed\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"bytes\",\"name\":\"initPayload\",\"type\":\"bytes\"}],\"name\":\"init\",\"outputs\":[{\"internalType\":\"bytes4\",\"name\":\"\",\"type\":\"bytes4\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"l1BaseFee\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"overhead\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"scalar\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"adminAddress\",\"type\":\"address\"}],\"name\":\"setAdmin\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_decimals\",\"type\":\"uint256\"}],\"name\":\"setDecimals\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_gasPrice\",\"type\":\"uint256\"}],\"name\":\"setGasPrice\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_baseFee\",\"type\":\"uint256\"}],\"name\":\"setL1BaseFee\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_overhead\",\"type\":\"uint256\"}],\"name\":\"setOverhead\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"_scalar\",\"type\":\"uint256\"}],\"name\":\"setScalar\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"details\":\"This contract exposes the current l2 gas price, a measure of how congested the network currently is. This measure is used by the Sequencer to determine what fee to charge for transactions. When the system is more congested, the l2 gas price will increase and fees will also increase as a result. All public variables are set while generating the initial L2 state. The constructor doesn't run in practice as the L2 state generation script uses the deployed bytecode instead of running the initcode.\",\"kind\":\"dev\",\"methods\":{\"constructor\":{\"details\":\"Constructor is left empty and init is used instead\"},\"getL1Fee(bytes)\":{\"params\":{\"_data\":\"Unsigned RLP encoded tx, 6 elements\"},\"returns\":{\"_0\":\"L1 fee that should be paid for the tx\"}},\"getL1GasUsed(bytes)\":{\"params\":{\"_data\":\"Unsigned RLP encoded tx, 6 elements\"},\"returns\":{\"_0\":\"Amount of L1 gas used for a transaction\"}},\"init(bytes)\":{\"details\":\"This function is called by the deployer/factory when creating a contract\",\"params\":{\"initPayload\":\"abi encoded payload to use for contract initilaization\"}},\"setDecimals(uint256)\":{\"params\":{\"_decimals\":\"New decimals\"}},\"setGasPrice(uint256)\":{\"params\":{\"_gasPrice\":\"New l2 gas price.\"}},\"setL1BaseFee(uint256)\":{\"params\":{\"_baseFee\":\"New l1 base fee\"}},\"setOverhead(uint256)\":{\"params\":{\"_overhead\":\"New overhead\"}},\"setScalar(uint256)\":{\"params\":{\"_scalar\":\"New scalar\"}}},\"title\":\"OVM_GasPriceOracle\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"getL1Fee(bytes)\":{\"notice\":\"Computes the L1 portion of the fee based on the size of the RLP encoded tx and the current l1BaseFee\"},\"getL1GasUsed(bytes)\":{\"notice\":\"Computes the amount of L1 gas used for a transaction The overhead represents the per batch gas overhead of posting both transaction and state roots to L1 given larger batch sizes. 4 gas for 0 byte https://github.com/ethereum/go-ethereum/blob/9ada4a2e2c415e6b0b51c50e901336872e028872/params/protocol_params.go#L33 16 gas for non zero byte https://github.com/ethereum/go-ethereum/blob/9ada4a2e2c415e6b0b51c50e901336872e028872/params/protocol_params.go#L87 This will need to be updated if calldata gas prices change Account for the transaction being unsigned Padding is added to account for lack of signature on transaction 1 byte for RLP V prefix 1 byte for V 1 byte for RLP R prefix 32 bytes for R 1 byte for RLP S prefix 32 bytes for S Total: 68 bytes of padding\"},\"init(bytes)\":{\"notice\":\"Used internally to initialize the contract instead of through a constructor\"},\"setDecimals(uint256)\":{\"notice\":\"Allows the owner to modify the decimals.\"},\"setGasPrice(uint256)\":{\"notice\":\"Allows the owner to modify the l2 gas price.\"},\"setL1BaseFee(uint256)\":{\"notice\":\"Allows the owner to modify the l1 base fee.\"},\"setOverhead(uint256)\":{\"notice\":\"Allows the owner to modify the overhead.\"},\"setScalar(uint256)\":{\"notice\":\"Allows the owner to modify the scalar.\"}},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/module/OVM_GasPriceOracle.sol\":\"OVM_GasPriceOracle\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"none\",\"useLiteralContent\":true},\"optimizer\":{\"enabled\":true,\"runs\":999999},\"remappings\":[\":ds-test/=lib/forge-std/lib/ds-test/src/\",\":erc721a-upgradeable/=erc721a-upgradeable/\",\":forge-std/=lib/forge-std/src/\",\"lib/forge-std:ds-test/=lib/forge-std/lib/ds-test/src/\"]},\"sources\":{\"contracts/abstract/Admin.sol\":{\"content\":\"// SPDX-License-Identifier: UNLICENSED\\n/*\\n\\n                         \\u250c\\u2500\\u2500\\u2500\\u2500\\u2500\\u2500\\u2500\\u2500\\u2500\\u2500\\u2500\\u2510\\n                         \\u2502 HOLOGRAPH \\u2502\\n                         \\u2514\\u2500\\u2500\\u2500\\u2500\\u2500\\u2500\\u2500\\u2500\\u2500\\u2500\\u2500\\u2518\\n\\u2554\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2557\\n\\u2551                                                             \\u2551\\n\\u2551                            / ^ \\\\                            \\u2551\\n\\u2551                            ~~*~~            \\u00b8               \\u2551\\n\\u2551                         [ '<>:<>' ]         \\u2502\\u2591\\u2591\\u2591            \\u2551\\n\\u2551               \\u2554\\u2557           _/\\\"\\\\_           \\u2554\\u2563               \\u2551\\n\\u2551             \\u250c\\u2500\\u256c\\u256c\\u2500\\u2510          \\\"\\\"\\\"          \\u250c\\u2500\\u256c\\u256c\\u2500\\u2510             \\u2551\\n\\u2551          \\u250c\\u2500\\u252c\\u2518 \\u2560\\u2563 \\u2514\\u252c\\u2500\\u2510       \\\\_/       \\u250c\\u2500\\u252c\\u2518 \\u2560\\u2563 \\u2514\\u252c\\u2500\\u2510          \\u2551\\n\\u2551       \\u250c\\u2500\\u252c\\u2518 \\u2502  \\u2560\\u2563  \\u2502 \\u2514\\u252c\\u2500\\u2510           \\u250c\\u2500\\u252c\\u2518 \\u2502  \\u2560\\u2563  \\u2502 \\u2514\\u252c\\u2500\\u2510       \\u2551\\n\\u2551    \\u250c\\u2500\\u252c\\u2518 \\u2502  \\u2502  \\u2560\\u2563  \\u2502  \\u2502 \\u2514\\u252c\\u2500\\u2510     \\u250c\\u2500\\u252c\\u2518 \\u2502  \\u2502  \\u2560\\u2563  \\u2502  \\u2502 \\u2514\\u252c\\u2500\\u2510    \\u2551\\n\\u2551 \\u250c\\u2500\\u252c\\u2518 \\u2502  \\u2502  \\u2502  \\u2560\\u2563  \\u2502  \\u2502  \\u2502 \\u2514\\u252c\\u2510 \\u250c\\u252c\\u2518 \\u2502  \\u2502  \\u2502  \\u2560\\u2563  \\u2502  \\u2502  \\u2502 \\u2514\\u252c\\u2500\\u2510 \\u2551\\n\\u2560\\u252c\\u2518 \\u2502  \\u2502  \\u2502  \\u2502  \\u2560\\u2563  \\u2502  \\u2502  \\u2502  \\u2502\\u2514\\u00a4\\u2518\\u2502  \\u2502  \\u2502  \\u2502  \\u2560\\u2563  \\u2502  \\u2502  \\u2502  \\u2502 \\u2514\\u252c\\u2563\\n\\u2551\\u2502  \\u2502  \\u2502  \\u2502  \\u2502  \\u2560\\u2563  \\u2502  \\u2502  \\u2502  \\u2502   \\u2502  \\u2502  \\u2502  \\u2502  \\u2560\\u2563  \\u2502  \\u2502  \\u2502  \\u2502  \\u2502\\u2551\\n\\u2560\\u2569\\u2550\\u2550\\u2569\\u2550\\u2550\\u2569\\u2550\\u2550\\u2569\\u2550\\u2550\\u2569\\u2550\\u2550\\u256c\\u256c\\u2550\\u2550\\u2569\\u2550\\u2550\\u2569\\u2550\\u2550\\u2569\\u2550\\u2550\\u2569\\u2550\\u2550\\u2550\\u2569\\u2550\\u2550\\u2569\\u2550\\u2550\\u2569\\u2550\\u2550\\u2569\\u2550\\u2550\\u256c\\u256c\\u2550\\u2550\\u2569\\u2550\\u2550\\u2569\\u2550\\u2550\\u2569\\u2550\\u2550\\u2569\\u2550\\u2550\\u2569\\u2563\\n\\u2560\\u2534\\u2534\\u2534\\u2534\\u2534\\u2534\\u2534\\u2534\\u2534\\u2534\\u2534\\u2534\\u2534\\u2534\\u2534\\u256c\\u256c\\u2534\\u2534\\u2534\\u2534\\u2534\\u2534\\u2534\\u2534\\u2534\\u2534\\u2534\\u2534\\u2534\\u2534\\u2534\\u2534\\u2534\\u2534\\u2534\\u2534\\u2534\\u2534\\u2534\\u2534\\u2534\\u2534\\u2534\\u256c\\u256c\\u2534\\u2534\\u2534\\u2534\\u2534\\u2534\\u2534\\u2534\\u2534\\u2534\\u2534\\u2534\\u2534\\u2534\\u2534\\u2563\\n\\u2551               \\u2560\\u2563                           \\u2560\\u2563               \\u2551\\n\\u2551               \\u2560\\u2563                           \\u2560\\u2563               \\u2551\\n\\u2551    ,          \\u2560\\u2563     ,        ,'      *    \\u2560\\u2563               \\u2551\\n\\u2551~~~~~^~~~~~~~~\\u250c\\u256c\\u256c\\u2510~~~^~~~~~~~~^^~~~~~~~~^~~\\u250c\\u256c\\u256c\\u2510~~~~~~~^~~~~~~\\u2551\\n\\u255a\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2569\\u2569\\u2569\\u2569\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2569\\u2569\\u2569\\u2569\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u255d\\n     - one protocol, one bridge = infinite possibilities -\\n\\n\\n ***************************************************************\\n\\n DISCLAIMER: U.S Patent Pending\\n\\n LICENSE: Holograph Limited Public License (H-LPL)\\n\\n https://holograph.xyz/licenses/h-lpl/1.0.0\\n\\n This license governs use of the accompanying software. If you\\n use the software, you accept this license. If you do not accept\\n the license, you are not permitted to use the software.\\n\\n 1. Definitions\\n\\n The terms \\\"reproduce,\\\" \\\"reproduction,\\\" \\\"derivative works,\\\" and\\n \\\"distribution\\\" have the same meaning here as under U.S.\\n copyright law. A \\\"contribution\\\" is the original software, or\\n any additions or changes to the software. A \\\"contributor\\\" is\\n any person that distributes its contribution under this\\n license. \\\"Licensed patents\\\" are a contributor\\u2019s patent claims\\n that read directly on its contribution.\\n\\n 2. Grant of Rights\\n\\n A) Copyright Grant- Subject to the terms of this license,\\n including the license conditions and limitations in sections 3\\n and 4, each contributor grants you a non-exclusive, worldwide,\\n royalty-free copyright license to reproduce its contribution,\\n prepare derivative works of its contribution, and distribute\\n its contribution or any derivative works that you create.\\n B) Patent Grant- Subject to the terms of this license,\\n including the license conditions and limitations in section 3,\\n each contributor grants you a non-exclusive, worldwide,\\n royalty-free license under its licensed patents to make, have\\n made, use, sell, offer for sale, import, and/or otherwise\\n dispose of its contribution in the software or derivative works\\n of the contribution in the software.\\n\\n 3. Conditions and Limitations\\n\\n A) No Trademark License- This license does not grant you rights\\n to use any contributors\\u2019 name, logo, or trademarks.\\n B) If you bring a patent claim against any contributor over\\n patents that you claim are infringed by the software, your\\n patent license from such contributor is terminated with\\n immediate effect.\\n C) If you distribute any portion of the software, you must\\n retain all copyright, patent, trademark, and attribution\\n notices that are present in the software.\\n D) If you distribute any portion of the software in source code\\n form, you may do so only under this license by including a\\n complete copy of this license with your distribution. If you\\n distribute any portion of the software in compiled or object\\n code form, you may only do so under a license that complies\\n with this license.\\n E) The software is licensed \\u201cas-is.\\u201d You bear all risks of\\n using it. The contributors give no express warranties,\\n guarantees, or conditions. You may have additional consumer\\n rights under your local laws which this license cannot change.\\n To the extent permitted under your local laws, the contributors\\n exclude all implied warranties, including those of\\n merchantability, fitness for a particular purpose and\\n non-infringement.\\n\\n 4. (F) Platform Limitation- The licenses granted in sections\\n 2.A & 2.B extend only to the software or derivative works that\\n you create that run on a Holograph system product.\\n\\n ***************************************************************\\n\\n*/\\n\\npragma solidity 0.8.13;\\n\\nabstract contract Admin {\\n  /**\\n   * @dev bytes32(uint256(keccak256('eip1967.Holograph.admin')) - 1)\\n   */\\n  bytes32 constant _adminSlot = 0x3f106594dc74eeef980dae234cde8324dc2497b13d27a0c59e55bd2ca10a07c9;\\n\\n  modifier onlyAdmin() {\\n    require(msg.sender == getAdmin(), \\\"HOLOGRAPH: admin only function\\\");\\n    _;\\n  }\\n\\n  constructor() {}\\n\\n  function admin() public view returns (address) {\\n    return getAdmin();\\n  }\\n\\n  function getAdmin() public view returns (address adminAddress) {\\n    assembly {\\n      adminAddress := sload(_adminSlot)\\n    }\\n  }\\n\\n  function setAdmin(address adminAddress) public onlyAdmin {\\n    assembly {\\n      sstore(_adminSlot, adminAddress)\\n    }\\n  }\\n\\n  function adminCall(address target, bytes calldata data) external payable onlyAdmin {\\n    assembly {\\n      calldatacopy(0, data.offset, data.length)\\n      let result := call(gas(), target, callvalue(), 0, data.length, 0, 0)\\n      returndatacopy(0, 0, returndatasize())\\n      switch result\\n      case 0 {\\n        revert(0, returndatasize())\\n      }\\n      default {\\n        return(0, returndatasize())\\n      }\\n    }\\n  }\\n}\\n\",\"keccak256\":\"0x93552c9253b579c45113a150a6a3dfddb997afd939d09b49c34d040525734b1a\",\"license\":\"UNLICENSED\"},\"contracts/abstract/Initializable.sol\":{\"content\":\"// SPDX-License-Identifier: UNLICENSED\\n/*\\n\\n                         \\u250c\\u2500\\u2500\\u2500\\u2500\\u2500\\u2500\\u2500\\u2500\\u2500\\u2500\\u2500\\u2510\\n                         \\u2502 HOLOGRAPH \\u2502\\n                         \\u2514\\u2500\\u2500\\u2500\\u2500\\u2500\\u2500\\u2500\\u2500\\u2500\\u2500\\u2500\\u2518\\n\\u2554\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2557\\n\\u2551                                                             \\u2551\\n\\u2551                            / ^ \\\\                            \\u2551\\n\\u2551                            ~~*~~            \\u00b8               \\u2551\\n\\u2551                         [ '<>:<>' ]         \\u2502\\u2591\\u2591\\u2591            \\u2551\\n\\u2551               \\u2554\\u2557           _/\\\"\\\\_           \\u2554\\u2563               \\u2551\\n\\u2551             \\u250c\\u2500\\u256c\\u256c\\u2500\\u2510          \\\"\\\"\\\"          \\u250c\\u2500\\u256c\\u256c\\u2500\\u2510             \\u2551\\n\\u2551          \\u250c\\u2500\\u252c\\u2518 \\u2560\\u2563 \\u2514\\u252c\\u2500\\u2510       \\\\_/       \\u250c\\u2500\\u252c\\u2518 \\u2560\\u2563 \\u2514\\u252c\\u2500\\u2510          \\u2551\\n\\u2551       \\u250c\\u2500\\u252c\\u2518 \\u2502  \\u2560\\u2563  \\u2502 \\u2514\\u252c\\u2500\\u2510           \\u250c\\u2500\\u252c\\u2518 \\u2502  \\u2560\\u2563  \\u2502 \\u2514\\u252c\\u2500\\u2510       \\u2551\\n\\u2551    \\u250c\\u2500\\u252c\\u2518 \\u2502  \\u2502  \\u2560\\u2563  \\u2502  \\u2502 \\u2514\\u252c\\u2500\\u2510     \\u250c\\u2500\\u252c\\u2518 \\u2502  \\u2502  \\u2560\\u2563  \\u2502  \\u2502 \\u2514\\u252c\\u2500\\u2510    \\u2551\\n\\u2551 \\u250c\\u2500\\u252c\\u2518 \\u2502  \\u2502  \\u2502  \\u2560\\u2563  \\u2502  \\u2502  \\u2502 \\u2514\\u252c\\u2510 \\u250c\\u252c\\u2518 \\u2502  \\u2502  \\u2502  \\u2560\\u2563  \\u2502  \\u2502  \\u2502 \\u2514\\u252c\\u2500\\u2510 \\u2551\\n\\u2560\\u252c\\u2518 \\u2502  \\u2502  \\u2502  \\u2502  \\u2560\\u2563  \\u2502  \\u2502  \\u2502  \\u2502\\u2514\\u00a4\\u2518\\u2502  \\u2502  \\u2502  \\u2502  \\u2560\\u2563  \\u2502  \\u2502  \\u2502  \\u2502 \\u2514\\u252c\\u2563\\n\\u2551\\u2502  \\u2502  \\u2502  \\u2502  \\u2502  \\u2560\\u2563  \\u2502  \\u2502  \\u2502  \\u2502   \\u2502  \\u2502  \\u2502  \\u2502  \\u2560\\u2563  \\u2502  \\u2502  \\u2502  \\u2502  \\u2502\\u2551\\n\\u2560\\u2569\\u2550\\u2550\\u2569\\u2550\\u2550\\u2569\\u2550\\u2550\\u2569\\u2550\\u2550\\u2569\\u2550\\u2550\\u256c\\u256c\\u2550\\u2550\\u2569\\u2550\\u2550\\u2569\\u2550\\u2550\\u2569\\u2550\\u2550\\u2569\\u2550\\u2550\\u2550\\u2569\\u2550\\u2550\\u2569\\u2550\\u2550\\u2569\\u2550\\u2550\\u2569\\u2550\\u2550\\u256c\\u256c\\u2550\\u2550\\u2569\\u2550\\u2550\\u2569\\u2550\\u2550\\u2569\\u2550\\u2550\\u2569\\u2550\\u2550\\u2569\\u2563\\n\\u2560\\u2534\\u2534\\u2534\\u2534\\u2534\\u2534\\u2534\\u2534\\u2534\\u2534\\u2534\\u2534\\u2534\\u2534\\u2534\\u256c\\u256c\\u2534\\u2534\\u2534\\u2534\\u2534\\u2534\\u2534\\u2534\\u2534\\u2534\\u2534\\u2534\\u2534\\u2534\\u2534\\u2534\\u2534\\u2534\\u2534\\u2534\\u2534\\u2534\\u2534\\u2534\\u2534\\u2534\\u2534\\u256c\\u256c\\u2534\\u2534\\u2534\\u2534\\u2534\\u2534\\u2534\\u2534\\u2534\\u2534\\u2534\\u2534\\u2534\\u2534\\u2534\\u2563\\n\\u2551               \\u2560\\u2563                           \\u2560\\u2563               \\u2551\\n\\u2551               \\u2560\\u2563                           \\u2560\\u2563               \\u2551\\n\\u2551    ,          \\u2560\\u2563     ,        ,'      *    \\u2560\\u2563               \\u2551\\n\\u2551~~~~~^~~~~~~~~\\u250c\\u256c\\u256c\\u2510~~~^~~~~~~~~^^~~~~~~~~^~~\\u250c\\u256c\\u256c\\u2510~~~~~~~^~~~~~~\\u2551\\n\\u255a\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2569\\u2569\\u2569\\u2569\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2569\\u2569\\u2569\\u2569\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u255d\\n     - one protocol, one bridge = infinite possibilities -\\n\\n\\n ***************************************************************\\n\\n DISCLAIMER: U.S Patent Pending\\n\\n LICENSE: Holograph Limited Public License (H-LPL)\\n\\n https://holograph.xyz/licenses/h-lpl/1.0.0\\n\\n This license governs use of the accompanying software. If you\\n use the software, you accept this license. If you do not accept\\n the license, you are not permitted to use the software.\\n\\n 1. Definitions\\n\\n The terms \\\"reproduce,\\\" \\\"reproduction,\\\" \\\"derivative works,\\\" and\\n \\\"distribution\\\" have the same meaning here as under U.S.\\n copyright law. A \\\"contribution\\\" is the original software, or\\n any additions or changes to the software. A \\\"contributor\\\" is\\n any person that distributes its contribution under this\\n license. \\\"Licensed patents\\\" are a contributor\\u2019s patent claims\\n that read directly on its contribution.\\n\\n 2. Grant of Rights\\n\\n A) Copyright Grant- Subject to the terms of this license,\\n including the license conditions and limitations in sections 3\\n and 4, each contributor grants you a non-exclusive, worldwide,\\n royalty-free copyright license to reproduce its contribution,\\n prepare derivative works of its contribution, and distribute\\n its contribution or any derivative works that you create.\\n B) Patent Grant- Subject to the terms of this license,\\n including the license conditions and limitations in section 3,\\n each contributor grants you a non-exclusive, worldwide,\\n royalty-free license under its licensed patents to make, have\\n made, use, sell, offer for sale, import, and/or otherwise\\n dispose of its contribution in the software or derivative works\\n of the contribution in the software.\\n\\n 3. Conditions and Limitations\\n\\n A) No Trademark License- This license does not grant you rights\\n to use any contributors\\u2019 name, logo, or trademarks.\\n B) If you bring a patent claim against any contributor over\\n patents that you claim are infringed by the software, your\\n patent license from such contributor is terminated with\\n immediate effect.\\n C) If you distribute any portion of the software, you must\\n retain all copyright, patent, trademark, and attribution\\n notices that are present in the software.\\n D) If you distribute any portion of the software in source code\\n form, you may do so only under this license by including a\\n complete copy of this license with your distribution. If you\\n distribute any portion of the software in compiled or object\\n code form, you may only do so under a license that complies\\n with this license.\\n E) The software is licensed \\u201cas-is.\\u201d You bear all risks of\\n using it. The contributors give no express warranties,\\n guarantees, or conditions. You may have additional consumer\\n rights under your local laws which this license cannot change.\\n To the extent permitted under your local laws, the contributors\\n exclude all implied warranties, including those of\\n merchantability, fitness for a particular purpose and\\n non-infringement.\\n\\n 4. (F) Platform Limitation- The licenses granted in sections\\n 2.A & 2.B extend only to the software or derivative works that\\n you create that run on a Holograph system product.\\n\\n ***************************************************************\\n\\n*/\\n\\npragma solidity 0.8.13;\\n\\nimport \\\"../interface/InitializableInterface.sol\\\";\\n\\n/**\\n * @title Initializable\\n * @author https://github.com/holographxyz\\n * @notice Use init instead of constructor\\n * @dev This allows for use of init function to make one time initializations without the need for a constructor\\n */\\nabstract contract Initializable is InitializableInterface {\\n  /**\\n   * @dev bytes32(uint256(keccak256('eip1967.Holograph.initialized')) - 1)\\n   */\\n  bytes32 constant _initializedSlot = 0x4e5f991bca30eca2d4643aaefa807e88f96a4a97398933d572a3c0d973004a01;\\n\\n  /**\\n   * @dev Constructor is left empty and init is used instead\\n   */\\n  constructor() {}\\n\\n  /**\\n   * @notice Used internally to initialize the contract instead of through a constructor\\n   * @dev This function is called by the deployer/factory when creating a contract\\n   * @param initPayload abi encoded payload to use for contract initilaization\\n   */\\n  function init(bytes memory initPayload) external virtual returns (bytes4);\\n\\n  function _isInitialized() internal view returns (bool initialized) {\\n    assembly {\\n      initialized := sload(_initializedSlot)\\n    }\\n  }\\n\\n  function _setInitialized() internal {\\n    assembly {\\n      sstore(_initializedSlot, 0x0000000000000000000000000000000000000000000000000000000000000001)\\n    }\\n  }\\n}\\n\",\"keccak256\":\"0xa55dc367285f96952dec56adfbfb48b6a4be31aef9ba0d30ad8c91023a572462\",\"license\":\"UNLICENSED\"},\"contracts/interface/InitializableInterface.sol\":{\"content\":\"// SPDX-License-Identifier: UNLICENSED\\n/*\\n\\n                         \\u250c\\u2500\\u2500\\u2500\\u2500\\u2500\\u2500\\u2500\\u2500\\u2500\\u2500\\u2500\\u2510\\n                         \\u2502 HOLOGRAPH \\u2502\\n                         \\u2514\\u2500\\u2500\\u2500\\u2500\\u2500\\u2500\\u2500\\u2500\\u2500\\u2500\\u2500\\u2518\\n\\u2554\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2557\\n\\u2551                                                             \\u2551\\n\\u2551                            / ^ \\\\                            \\u2551\\n\\u2551                            ~~*~~            \\u00b8               \\u2551\\n\\u2551                         [ '<>:<>' ]         \\u2502\\u2591\\u2591\\u2591            \\u2551\\n\\u2551               \\u2554\\u2557           _/\\\"\\\\_           \\u2554\\u2563               \\u2551\\n\\u2551             \\u250c\\u2500\\u256c\\u256c\\u2500\\u2510          \\\"\\\"\\\"          \\u250c\\u2500\\u256c\\u256c\\u2500\\u2510             \\u2551\\n\\u2551          \\u250c\\u2500\\u252c\\u2518 \\u2560\\u2563 \\u2514\\u252c\\u2500\\u2510       \\\\_/       \\u250c\\u2500\\u252c\\u2518 \\u2560\\u2563 \\u2514\\u252c\\u2500\\u2510          \\u2551\\n\\u2551       \\u250c\\u2500\\u252c\\u2518 \\u2502  \\u2560\\u2563  \\u2502 \\u2514\\u252c\\u2500\\u2510           \\u250c\\u2500\\u252c\\u2518 \\u2502  \\u2560\\u2563  \\u2502 \\u2514\\u252c\\u2500\\u2510       \\u2551\\n\\u2551    \\u250c\\u2500\\u252c\\u2518 \\u2502  \\u2502  \\u2560\\u2563  \\u2502  \\u2502 \\u2514\\u252c\\u2500\\u2510     \\u250c\\u2500\\u252c\\u2518 \\u2502  \\u2502  \\u2560\\u2563  \\u2502  \\u2502 \\u2514\\u252c\\u2500\\u2510    \\u2551\\n\\u2551 \\u250c\\u2500\\u252c\\u2518 \\u2502  \\u2502  \\u2502  \\u2560\\u2563  \\u2502  \\u2502  \\u2502 \\u2514\\u252c\\u2510 \\u250c\\u252c\\u2518 \\u2502  \\u2502  \\u2502  \\u2560\\u2563  \\u2502  \\u2502  \\u2502 \\u2514\\u252c\\u2500\\u2510 \\u2551\\n\\u2560\\u252c\\u2518 \\u2502  \\u2502  \\u2502  \\u2502  \\u2560\\u2563  \\u2502  \\u2502  \\u2502  \\u2502\\u2514\\u00a4\\u2518\\u2502  \\u2502  \\u2502  \\u2502  \\u2560\\u2563  \\u2502  \\u2502  \\u2502  \\u2502 \\u2514\\u252c\\u2563\\n\\u2551\\u2502  \\u2502  \\u2502  \\u2502  \\u2502  \\u2560\\u2563  \\u2502  \\u2502  \\u2502  \\u2502   \\u2502  \\u2502  \\u2502  \\u2502  \\u2560\\u2563  \\u2502  \\u2502  \\u2502  \\u2502  \\u2502\\u2551\\n\\u2560\\u2569\\u2550\\u2550\\u2569\\u2550\\u2550\\u2569\\u2550\\u2550\\u2569\\u2550\\u2550\\u2569\\u2550\\u2550\\u256c\\u256c\\u2550\\u2550\\u2569\\u2550\\u2550\\u2569\\u2550\\u2550\\u2569\\u2550\\u2550\\u2569\\u2550\\u2550\\u2550\\u2569\\u2550\\u2550\\u2569\\u2550\\u2550\\u2569\\u2550\\u2550\\u2569\\u2550\\u2550\\u256c\\u256c\\u2550\\u2550\\u2569\\u2550\\u2550\\u2569\\u2550\\u2550\\u2569\\u2550\\u2550\\u2569\\u2550\\u2550\\u2569\\u2563\\n\\u2560\\u2534\\u2534\\u2534\\u2534\\u2534\\u2534\\u2534\\u2534\\u2534\\u2534\\u2534\\u2534\\u2534\\u2534\\u2534\\u256c\\u256c\\u2534\\u2534\\u2534\\u2534\\u2534\\u2534\\u2534\\u2534\\u2534\\u2534\\u2534\\u2534\\u2534\\u2534\\u2534\\u2534\\u2534\\u2534\\u2534\\u2534\\u2534\\u2534\\u2534\\u2534\\u2534\\u2534\\u2534\\u256c\\u256c\\u2534\\u2534\\u2534\\u2534\\u2534\\u2534\\u2534\\u2534\\u2534\\u2534\\u2534\\u2534\\u2534\\u2534\\u2534\\u2563\\n\\u2551               \\u2560\\u2563                           \\u2560\\u2563               \\u2551\\n\\u2551               \\u2560\\u2563                           \\u2560\\u2563               \\u2551\\n\\u2551    ,          \\u2560\\u2563     ,        ,'      *    \\u2560\\u2563               \\u2551\\n\\u2551~~~~~^~~~~~~~~\\u250c\\u256c\\u256c\\u2510~~~^~~~~~~~~^^~~~~~~~~^~~\\u250c\\u256c\\u256c\\u2510~~~~~~~^~~~~~~\\u2551\\n\\u255a\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2569\\u2569\\u2569\\u2569\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2569\\u2569\\u2569\\u2569\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u2550\\u255d\\n     - one protocol, one bridge = infinite possibilities -\\n\\n\\n ***************************************************************\\n\\n DISCLAIMER: U.S Patent Pending\\n\\n LICENSE: Holograph Limited Public License (H-LPL)\\n\\n https://holograph.xyz/licenses/h-lpl/1.0.0\\n\\n This license governs use of the accompanying software. If you\\n use the software, you accept this license. If you do not accept\\n the license, you are not permitted to use the software.\\n\\n 1. Definitions\\n\\n The terms \\\"reproduce,\\\" \\\"reproduction,\\\" \\\"derivative works,\\\" and\\n \\\"distribution\\\" have the same meaning here as under U.S.\\n copyright law. A \\\"contribution\\\" is the original software, or\\n any additions or changes to the software. A \\\"contributor\\\" is\\n any person that distributes its contribution under this\\n license. \\\"Licensed patents\\\" are a contributor\\u2019s patent claims\\n that read directly on its contribution.\\n\\n 2. Grant of Rights\\n\\n A) Copyright Grant- Subject to the terms of this license,\\n including the license conditions and limitations in sections 3\\n and 4, each contributor grants you a non-exclusive, worldwide,\\n royalty-free copyright license to reproduce its contribution,\\n prepare derivative works of its contribution, and distribute\\n its contribution or any derivative works that you create.\\n B) Patent Grant- Subject to the terms of this license,\\n including the license conditions and limitations in section 3,\\n each contributor grants you a non-exclusive, worldwide,\\n royalty-free license under its licensed patents to make, have\\n made, use, sell, offer for sale, import, and/or otherwise\\n dispose of its contribution in the software or derivative works\\n of the contribution in the software.\\n\\n 3. Conditions and Limitations\\n\\n A) No Trademark License- This license does not grant you rights\\n to use any contributors\\u2019 name, logo, or trademarks.\\n B) If you bring a patent claim against any contributor over\\n patents that you claim are infringed by the software, your\\n patent license from such contributor is terminated with\\n immediate effect.\\n C) If you distribute any portion of the software, you must\\n retain all copyright, patent, trademark, and attribution\\n notices that are present in the software.\\n D) If you distribute any portion of the software in source code\\n form, you may do so only under this license by including a\\n complete copy of this license with your distribution. If you\\n distribute any portion of the software in compiled or object\\n code form, you may only do so under a license that complies\\n with this license.\\n E) The software is licensed \\u201cas-is.\\u201d You bear all risks of\\n using it. The contributors give no express warranties,\\n guarantees, or conditions. You may have additional consumer\\n rights under your local laws which this license cannot change.\\n To the extent permitted under your local laws, the contributors\\n exclude all implied warranties, including those of\\n merchantability, fitness for a particular purpose and\\n non-infringement.\\n\\n 4. (F) Platform Limitation- The licenses granted in sections\\n 2.A & 2.B extend only to the software or derivative works that\\n you create that run on a Holograph system product.\\n\\n ***************************************************************\\n\\n*/\\n\\npragma solidity 0.8.13;\\n\\n/**\\n * @title Initializable\\n * @author https://github.com/holographxyz\\n * @notice Use init instead of constructor\\n * @dev This allows for use of init function to make one time initializations without the need of a constructor\\n */\\ninterface InitializableInterface {\\n  /**\\n   * @notice Used internally to initialize the contract instead of through a constructor\\n   * @dev This function is called by the deployer/factory when creating a contract\\n   * @param initPayload abi encoded payload to use for contract initilaization\\n   */\\n  function init(bytes memory initPayload) external returns (bytes4);\\n}\\n\",\"keccak256\":\"0x0a76fae986c5c18110ce2b1818c84ec28b7bf7f8fb00d20b39b8d7225fbd892d\",\"license\":\"UNLICENSED\"},\"contracts/module/OVM_GasPriceOracle.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\n\\npragma solidity 0.8.13;\\n\\nimport \\\"../abstract/Admin.sol\\\";\\nimport \\\"../abstract/Initializable.sol\\\";\\n\\n/**\\n * @title OVM_GasPriceOracle\\n * @dev This contract exposes the current l2 gas price, a measure of how congested the network\\n * currently is. This measure is used by the Sequencer to determine what fee to charge for\\n * transactions. When the system is more congested, the l2 gas price will increase and fees\\n * will also increase as a result.\\n *\\n * All public variables are set while generating the initial L2 state. The\\n * constructor doesn't run in practice as the L2 state generation script uses\\n * the deployed bytecode instead of running the initcode.\\n */\\ncontract OVM_GasPriceOracle is Admin, Initializable {\\n  // Current L2 gas price\\n  uint256 public gasPrice;\\n  // Current L1 base fee\\n  uint256 public l1BaseFee;\\n  // Amortized cost of batch submission per transaction\\n  uint256 public overhead;\\n  // Value to scale the fee up by\\n  uint256 public scalar;\\n  // Number of decimals of the scalar\\n  uint256 public decimals;\\n\\n  /**\\n   * @dev Constructor is left empty and init is used instead\\n   */\\n  constructor() {}\\n\\n  /**\\n   * @notice Used internally to initialize the contract instead of through a constructor\\n   * @dev This function is called by the deployer/factory when creating a contract\\n   * @param initPayload abi encoded payload to use for contract initilaization\\n   */\\n  function init(bytes memory initPayload) external override returns (bytes4) {\\n    require(!_isInitialized(), \\\"HOLOGRAPH: already initialized\\\");\\n    (uint256 _gasPrice, uint256 _l1BaseFee, uint256 _overhead, uint256 _scalar, uint256 _decimals) = abi.decode(\\n      initPayload,\\n      (uint256, uint256, uint256, uint256, uint256)\\n    );\\n    gasPrice = _gasPrice;\\n    l1BaseFee = _l1BaseFee;\\n    overhead = _overhead;\\n    scalar = _scalar;\\n    decimals = _decimals;\\n    assembly {\\n      sstore(_adminSlot, origin())\\n    }\\n    _setInitialized();\\n    return InitializableInterface.init.selector;\\n  }\\n\\n  event GasPriceUpdated(uint256);\\n  event L1BaseFeeUpdated(uint256);\\n  event OverheadUpdated(uint256);\\n  event ScalarUpdated(uint256);\\n  event DecimalsUpdated(uint256);\\n\\n  /**\\n   * Allows the owner to modify the l2 gas price.\\n   * @param _gasPrice New l2 gas price.\\n   */\\n  function setGasPrice(uint256 _gasPrice) external onlyAdmin {\\n    gasPrice = _gasPrice;\\n    emit GasPriceUpdated(_gasPrice);\\n  }\\n\\n  /**\\n   * Allows the owner to modify the l1 base fee.\\n   * @param _baseFee New l1 base fee\\n   */\\n  function setL1BaseFee(uint256 _baseFee) external onlyAdmin {\\n    l1BaseFee = _baseFee;\\n    emit L1BaseFeeUpdated(_baseFee);\\n  }\\n\\n  /**\\n   * Allows the owner to modify the overhead.\\n   * @param _overhead New overhead\\n   */\\n  function setOverhead(uint256 _overhead) external onlyAdmin {\\n    overhead = _overhead;\\n    emit OverheadUpdated(_overhead);\\n  }\\n\\n  /**\\n   * Allows the owner to modify the scalar.\\n   * @param _scalar New scalar\\n   */\\n  function setScalar(uint256 _scalar) external onlyAdmin {\\n    scalar = _scalar;\\n    emit ScalarUpdated(_scalar);\\n  }\\n\\n  /**\\n   * Allows the owner to modify the decimals.\\n   * @param _decimals New decimals\\n   */\\n  function setDecimals(uint256 _decimals) external onlyAdmin {\\n    decimals = _decimals;\\n    emit DecimalsUpdated(_decimals);\\n  }\\n\\n  /**\\n   * Computes the L1 portion of the fee\\n   * based on the size of the RLP encoded tx\\n   * and the current l1BaseFee\\n   * @param _data Unsigned RLP encoded tx, 6 elements\\n   * @return L1 fee that should be paid for the tx\\n   */\\n  function getL1Fee(bytes memory _data) external view returns (uint256) {\\n    uint256 l1GasUsed = getL1GasUsed(_data);\\n    uint256 l1Fee = l1GasUsed * l1BaseFee;\\n    uint256 divisor = 10 ** decimals;\\n    uint256 unscaled = l1Fee * scalar;\\n    uint256 scaled = unscaled / divisor;\\n    return scaled;\\n  }\\n\\n  /**\\n   * Computes the amount of L1 gas used for a transaction\\n   * The overhead represents the per batch gas overhead of\\n   * posting both transaction and state roots to L1 given larger\\n   * batch sizes.\\n   * 4 gas for 0 byte\\n   * https://github.com/ethereum/go-ethereum/blob/9ada4a2e2c415e6b0b51c50e901336872e028872/params/protocol_params.go#L33\\n   * 16 gas for non zero byte\\n   * https://github.com/ethereum/go-ethereum/blob/9ada4a2e2c415e6b0b51c50e901336872e028872/params/protocol_params.go#L87\\n   * This will need to be updated if calldata gas prices change\\n   * Account for the transaction being unsigned\\n   * Padding is added to account for lack of signature on transaction\\n   * 1 byte for RLP V prefix\\n   * 1 byte for V\\n   * 1 byte for RLP R prefix\\n   * 32 bytes for R\\n   * 1 byte for RLP S prefix\\n   * 32 bytes for S\\n   * Total: 68 bytes of padding\\n   * @param _data Unsigned RLP encoded tx, 6 elements\\n   * @return Amount of L1 gas used for a transaction\\n   */\\n  function getL1GasUsed(bytes memory _data) public view returns (uint256) {\\n    uint256 total = 0;\\n    for (uint256 i = 0; i < _data.length; i++) {\\n      if (_data[i] == 0) {\\n        total += 4;\\n      } else {\\n        total += 16;\\n      }\\n    }\\n    uint256 unsigned = total + overhead;\\n    return unsigned + (68 * 16);\\n  }\\n}\\n\",\"keccak256\":\"0xd688c869a061b14c9b41ecf59cf0d8ee0113acf6c41f1c5899ae83bc641bff13\",\"license\":\"MIT\"}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b506110ac806100206000396000f3fe60806040526004361061010e5760003560e01c8063704b6c02116100a5578063bf64a82d11610074578063f45e65d811610059578063f45e65d814610323578063f851a44014610339578063fe173b971461034e57600080fd5b8063bf64a82d146102f0578063de26c4a11461030357600080fd5b8063704b6c02146102705780638c8885c814610290578063bede39b5146102b0578063bf1fe420146102d057600080fd5b80634ddf47d4116100e15780634ddf47d414610194578063519b4bd3146101e55780636e9960c3146101fb578063704655971461025057600080fd5b80630c18c16214610113578063313ce5671461013c5780633577afc51461015257806349948e0e14610174575b600080fd5b34801561011f57600080fd5b5061012960025481565b6040519081526020015b60405180910390f35b34801561014857600080fd5b5061012960045481565b34801561015e57600080fd5b5061017261016d366004610c26565b610364565b005b34801561018057600080fd5b5061012961018f366004610c6e565b61045b565b3480156101a057600080fd5b506101b46101af366004610c6e565b6104b7565b6040517fffffffff000000000000000000000000000000000000000000000000000000009091168152602001610133565b3480156101f157600080fd5b5061012960015481565b34801561020757600080fd5b507f3f106594dc74eeef980dae234cde8324dc2497b13d27a0c59e55bd2ca10a07c9545b60405173ffffffffffffffffffffffffffffffffffffffff9091168152602001610133565b34801561025c57600080fd5b5061017261026b366004610c26565b6105ef565b34801561027c57600080fd5b5061017261028b366004610d66565b6106da565b34801561029c57600080fd5b506101726102ab366004610c26565b6107b4565b3480156102bc57600080fd5b506101726102cb366004610c26565b61089f565b3480156102dc57600080fd5b506101726102eb366004610c26565b61098a565b6101726102fe366004610d88565b610a75565b34801561030f57600080fd5b5061012961031e366004610c6e565b610b50565b34801561032f57600080fd5b5061012960035481565b34801561034557600080fd5b5061022b610bf7565b34801561035a57600080fd5b5061012960005481565b7f3f106594dc74eeef980dae234cde8324dc2497b13d27a0c59e55bd2ca10a07c95473ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff161461041f576040517f08c379a000000000000000000000000000000000000000000000000000000000815260206004820152601e60248201527f484f4c4f47524150483a2061646d696e206f6e6c792066756e6374696f6e000060448201526064015b60405180910390fd5b60028190556040518181527f32740b35c0ea213650f60d44366b4fb211c9033b50714e4a1d34e65d5beb9bb4906020015b60405180910390a150565b60008061046783610b50565b90506000600154826104799190610e3a565b90506000600454600a61048c9190610f99565b905060006003548361049e9190610e3a565b905060006104ac8383610fa5565b979650505050505050565b60006104e17f4e5f991bca30eca2d4643aaefa807e88f96a4a97398933d572a3c0d973004a015490565b15610548576040517f08c379a000000000000000000000000000000000000000000000000000000000815260206004820152601e60248201527f484f4c4f47524150483a20616c726561647920696e697469616c697a656400006044820152606401610416565b6000806000806000868060200190518101906105649190610fe0565b6000949094556001928355600291909155600355600491909155327f3f106594dc74eeef980dae234cde8324dc2497b13d27a0c59e55bd2ca10a07c9557f4e5f991bca30eca2d4643aaefa807e88f96a4a97398933d572a3c0d973004a0155507f4ddf47d4000000000000000000000000000000000000000000000000000000009695505050505050565b7f3f106594dc74eeef980dae234cde8324dc2497b13d27a0c59e55bd2ca10a07c95473ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff16146106a5576040517f08c379a000000000000000000000000000000000000000000000000000000000815260206004820152601e60248201527f484f4c4f47524150483a2061646d696e206f6e6c792066756e6374696f6e00006044820152606401610416565b60038190556040518181527f3336cd9708eaf2769a0f0dc0679f30e80f15dcd88d1921b5a16858e8b85c591a90602001610450565b7f3f106594dc74eeef980dae234cde8324dc2497b13d27a0c59e55bd2ca10a07c95473ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff1614610790576040517f08c379a000000000000000000000000000000000000000000000000000000000815260206004820152601e60248201527f484f4c4f47524150483a2061646d696e206f6e6c792066756e6374696f6e00006044820152606401610416565b7f3f106594dc74eeef980dae234cde8324dc2497b13d27a0c59e55bd2ca10a07c955565b7f3f106594dc74eeef980dae234cde8324dc2497b13d27a0c59e55bd2ca10a07c95473ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff161461086a576040517f08c379a000000000000000000000000000000000000000000000000000000000815260206004820152601e60248201527f484f4c4f47524150483a2061646d696e206f6e6c792066756e6374696f6e00006044820152606401610416565b60048190556040518181527fd68112a8707e326d08be3656b528c1bcc5bbbfc47f4177e2179b14d8640838c190602001610450565b7f3f106594dc74eeef980dae234cde8324dc2497b13d27a0c59e55bd2ca10a07c95473ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff1614610955576040517f08c379a000000000000000000000000000000000000000000000000000000000815260206004820152601e60248201527f484f4c4f47524150483a2061646d696e206f6e6c792066756e6374696f6e00006044820152606401610416565b60018190556040518181527f351fb23757bb5ea0546c85b7996ddd7155f96b939ebaa5ff7bc49c75f27f2c4490602001610450565b7f3f106594dc74eeef980dae234cde8324dc2497b13d27a0c59e55bd2ca10a07c95473ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff1614610a40576040517f08c379a000000000000000000000000000000000000000000000000000000000815260206004820152601e60248201527f484f4c4f47524150483a2061646d696e206f6e6c792066756e6374696f6e00006044820152606401610416565b60008190556040518181527ffcdccc6074c6c42e4bd578aa9870c697dc976a270968452d2b8c8dc369fae39690602001610450565b7f3f106594dc74eeef980dae234cde8324dc2497b13d27a0c59e55bd2ca10a07c95473ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff1614610b2b576040517f08c379a000000000000000000000000000000000000000000000000000000000815260206004820152601e60248201527f484f4c4f47524150483a2061646d696e206f6e6c792066756e6374696f6e00006044820152606401610416565b808260003760008082600034875af13d6000803e808015610b4b573d6000f35b3d6000fd5b600080805b8351811015610bd057838181518110610b7057610b70611020565b01602001517fff0000000000000000000000000000000000000000000000000000000000000016600003610bb057610ba960048361104f565b9150610bbe565b610bbb60108361104f565b91505b80610bc881611067565b915050610b55565b50600060025482610be1919061104f565b9050610bef8161044061104f565b949350505050565b6000610c217f3f106594dc74eeef980dae234cde8324dc2497b13d27a0c59e55bd2ca10a07c95490565b905090565b600060208284031215610c3857600080fd5b5035919050565b7f4e487b7100000000000000000000000000000000000000000000000000000000600052604160045260246000fd5b600060208284031215610c8057600080fd5b813567ffffffffffffffff80821115610c9857600080fd5b818401915084601f830112610cac57600080fd5b813581811115610cbe57610cbe610c3f565b604051601f82017fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe0908116603f01168101908382118183101715610d0457610d04610c3f565b81604052828152876020848701011115610d1d57600080fd5b826020860160208301376000928101602001929092525095945050505050565b803573ffffffffffffffffffffffffffffffffffffffff81168114610d6157600080fd5b919050565b600060208284031215610d7857600080fd5b610d8182610d3d565b9392505050565b600080600060408486031215610d9d57600080fd5b610da684610d3d565b9250602084013567ffffffffffffffff80821115610dc357600080fd5b818601915086601f830112610dd757600080fd5b813581811115610de657600080fd5b876020828501011115610df857600080fd5b6020830194508093505050509250925092565b7f4e487b7100000000000000000000000000000000000000000000000000000000600052601160045260246000fd5b6000817fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff0483118215151615610e7257610e72610e0b565b500290565b600181815b80851115610ed057817fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff04821115610eb657610eb6610e0b565b80851615610ec357918102915b93841c9390800290610e7c565b509250929050565b600082610ee757506001610f93565b81610ef457506000610f93565b8160018114610f0a5760028114610f1457610f30565b6001915050610f93565b60ff841115610f2557610f25610e0b565b50506001821b610f93565b5060208310610133831016604e8410600b8410161715610f53575081810a610f93565b610f5d8383610e77565b807fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff04821115610f8f57610f8f610e0b565b0290505b92915050565b6000610d818383610ed8565b600082610fdb577f4e487b7100000000000000000000000000000000000000000000000000000000600052601260045260246000fd5b500490565b600080600080600060a08688031215610ff857600080fd5b5050835160208501516040860151606087015160809097015192989197509594509092509050565b7f4e487b7100000000000000000000000000000000000000000000000000000000600052603260045260246000fd5b6000821982111561106257611062610e0b565b500190565b60007fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff820361109857611098610e0b565b506001019056fea164736f6c634300080d000a",
+  "deployedBytecode": "0x60806040526004361061010e5760003560e01c8063704b6c02116100a5578063bf64a82d11610074578063f45e65d811610059578063f45e65d814610323578063f851a44014610339578063fe173b971461034e57600080fd5b8063bf64a82d146102f0578063de26c4a11461030357600080fd5b8063704b6c02146102705780638c8885c814610290578063bede39b5146102b0578063bf1fe420146102d057600080fd5b80634ddf47d4116100e15780634ddf47d414610194578063519b4bd3146101e55780636e9960c3146101fb578063704655971461025057600080fd5b80630c18c16214610113578063313ce5671461013c5780633577afc51461015257806349948e0e14610174575b600080fd5b34801561011f57600080fd5b5061012960025481565b6040519081526020015b60405180910390f35b34801561014857600080fd5b5061012960045481565b34801561015e57600080fd5b5061017261016d366004610c26565b610364565b005b34801561018057600080fd5b5061012961018f366004610c6e565b61045b565b3480156101a057600080fd5b506101b46101af366004610c6e565b6104b7565b6040517fffffffff000000000000000000000000000000000000000000000000000000009091168152602001610133565b3480156101f157600080fd5b5061012960015481565b34801561020757600080fd5b507f3f106594dc74eeef980dae234cde8324dc2497b13d27a0c59e55bd2ca10a07c9545b60405173ffffffffffffffffffffffffffffffffffffffff9091168152602001610133565b34801561025c57600080fd5b5061017261026b366004610c26565b6105ef565b34801561027c57600080fd5b5061017261028b366004610d66565b6106da565b34801561029c57600080fd5b506101726102ab366004610c26565b6107b4565b3480156102bc57600080fd5b506101726102cb366004610c26565b61089f565b3480156102dc57600080fd5b506101726102eb366004610c26565b61098a565b6101726102fe366004610d88565b610a75565b34801561030f57600080fd5b5061012961031e366004610c6e565b610b50565b34801561032f57600080fd5b5061012960035481565b34801561034557600080fd5b5061022b610bf7565b34801561035a57600080fd5b5061012960005481565b7f3f106594dc74eeef980dae234cde8324dc2497b13d27a0c59e55bd2ca10a07c95473ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff161461041f576040517f08c379a000000000000000000000000000000000000000000000000000000000815260206004820152601e60248201527f484f4c4f47524150483a2061646d696e206f6e6c792066756e6374696f6e000060448201526064015b60405180910390fd5b60028190556040518181527f32740b35c0ea213650f60d44366b4fb211c9033b50714e4a1d34e65d5beb9bb4906020015b60405180910390a150565b60008061046783610b50565b90506000600154826104799190610e3a565b90506000600454600a61048c9190610f99565b905060006003548361049e9190610e3a565b905060006104ac8383610fa5565b979650505050505050565b60006104e17f4e5f991bca30eca2d4643aaefa807e88f96a4a97398933d572a3c0d973004a015490565b15610548576040517f08c379a000000000000000000000000000000000000000000000000000000000815260206004820152601e60248201527f484f4c4f47524150483a20616c726561647920696e697469616c697a656400006044820152606401610416565b6000806000806000868060200190518101906105649190610fe0565b6000949094556001928355600291909155600355600491909155327f3f106594dc74eeef980dae234cde8324dc2497b13d27a0c59e55bd2ca10a07c9557f4e5f991bca30eca2d4643aaefa807e88f96a4a97398933d572a3c0d973004a0155507f4ddf47d4000000000000000000000000000000000000000000000000000000009695505050505050565b7f3f106594dc74eeef980dae234cde8324dc2497b13d27a0c59e55bd2ca10a07c95473ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff16146106a5576040517f08c379a000000000000000000000000000000000000000000000000000000000815260206004820152601e60248201527f484f4c4f47524150483a2061646d696e206f6e6c792066756e6374696f6e00006044820152606401610416565b60038190556040518181527f3336cd9708eaf2769a0f0dc0679f30e80f15dcd88d1921b5a16858e8b85c591a90602001610450565b7f3f106594dc74eeef980dae234cde8324dc2497b13d27a0c59e55bd2ca10a07c95473ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff1614610790576040517f08c379a000000000000000000000000000000000000000000000000000000000815260206004820152601e60248201527f484f4c4f47524150483a2061646d696e206f6e6c792066756e6374696f6e00006044820152606401610416565b7f3f106594dc74eeef980dae234cde8324dc2497b13d27a0c59e55bd2ca10a07c955565b7f3f106594dc74eeef980dae234cde8324dc2497b13d27a0c59e55bd2ca10a07c95473ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff161461086a576040517f08c379a000000000000000000000000000000000000000000000000000000000815260206004820152601e60248201527f484f4c4f47524150483a2061646d696e206f6e6c792066756e6374696f6e00006044820152606401610416565b60048190556040518181527fd68112a8707e326d08be3656b528c1bcc5bbbfc47f4177e2179b14d8640838c190602001610450565b7f3f106594dc74eeef980dae234cde8324dc2497b13d27a0c59e55bd2ca10a07c95473ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff1614610955576040517f08c379a000000000000000000000000000000000000000000000000000000000815260206004820152601e60248201527f484f4c4f47524150483a2061646d696e206f6e6c792066756e6374696f6e00006044820152606401610416565b60018190556040518181527f351fb23757bb5ea0546c85b7996ddd7155f96b939ebaa5ff7bc49c75f27f2c4490602001610450565b7f3f106594dc74eeef980dae234cde8324dc2497b13d27a0c59e55bd2ca10a07c95473ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff1614610a40576040517f08c379a000000000000000000000000000000000000000000000000000000000815260206004820152601e60248201527f484f4c4f47524150483a2061646d696e206f6e6c792066756e6374696f6e00006044820152606401610416565b60008190556040518181527ffcdccc6074c6c42e4bd578aa9870c697dc976a270968452d2b8c8dc369fae39690602001610450565b7f3f106594dc74eeef980dae234cde8324dc2497b13d27a0c59e55bd2ca10a07c95473ffffffffffffffffffffffffffffffffffffffff163373ffffffffffffffffffffffffffffffffffffffff1614610b2b576040517f08c379a000000000000000000000000000000000000000000000000000000000815260206004820152601e60248201527f484f4c4f47524150483a2061646d696e206f6e6c792066756e6374696f6e00006044820152606401610416565b808260003760008082600034875af13d6000803e808015610b4b573d6000f35b3d6000fd5b600080805b8351811015610bd057838181518110610b7057610b70611020565b01602001517fff0000000000000000000000000000000000000000000000000000000000000016600003610bb057610ba960048361104f565b9150610bbe565b610bbb60108361104f565b91505b80610bc881611067565b915050610b55565b50600060025482610be1919061104f565b9050610bef8161044061104f565b949350505050565b6000610c217f3f106594dc74eeef980dae234cde8324dc2497b13d27a0c59e55bd2ca10a07c95490565b905090565b600060208284031215610c3857600080fd5b5035919050565b7f4e487b7100000000000000000000000000000000000000000000000000000000600052604160045260246000fd5b600060208284031215610c8057600080fd5b813567ffffffffffffffff80821115610c9857600080fd5b818401915084601f830112610cac57600080fd5b813581811115610cbe57610cbe610c3f565b604051601f82017fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe0908116603f01168101908382118183101715610d0457610d04610c3f565b81604052828152876020848701011115610d1d57600080fd5b826020860160208301376000928101602001929092525095945050505050565b803573ffffffffffffffffffffffffffffffffffffffff81168114610d6157600080fd5b919050565b600060208284031215610d7857600080fd5b610d8182610d3d565b9392505050565b600080600060408486031215610d9d57600080fd5b610da684610d3d565b9250602084013567ffffffffffffffff80821115610dc357600080fd5b818601915086601f830112610dd757600080fd5b813581811115610de657600080fd5b876020828501011115610df857600080fd5b6020830194508093505050509250925092565b7f4e487b7100000000000000000000000000000000000000000000000000000000600052601160045260246000fd5b6000817fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff0483118215151615610e7257610e72610e0b565b500290565b600181815b80851115610ed057817fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff04821115610eb657610eb6610e0b565b80851615610ec357918102915b93841c9390800290610e7c565b509250929050565b600082610ee757506001610f93565b81610ef457506000610f93565b8160018114610f0a5760028114610f1457610f30565b6001915050610f93565b60ff841115610f2557610f25610e0b565b50506001821b610f93565b5060208310610133831016604e8410600b8410161715610f53575081810a610f93565b610f5d8383610e77565b807fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff04821115610f8f57610f8f610e0b565b0290505b92915050565b6000610d818383610ed8565b600082610fdb577f4e487b7100000000000000000000000000000000000000000000000000000000600052601260045260246000fd5b500490565b600080600080600060a08688031215610ff857600080fd5b5050835160208501516040860151606087015160809097015192989197509594509092509050565b7f4e487b7100000000000000000000000000000000000000000000000000000000600052603260045260246000fd5b6000821982111561106257611062610e0b565b500190565b60007fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff820361109857611098610e0b565b506001019056fea164736f6c634300080d000a",
+  "devdoc": {
+    "details": "This contract exposes the current l2 gas price, a measure of how congested the network currently is. This measure is used by the Sequencer to determine what fee to charge for transactions. When the system is more congested, the l2 gas price will increase and fees will also increase as a result. All public variables are set while generating the initial L2 state. The constructor doesn't run in practice as the L2 state generation script uses the deployed bytecode instead of running the initcode.",
+    "kind": "dev",
+    "methods": {
+      "constructor": {
+        "details": "Constructor is left empty and init is used instead"
+      },
+      "getL1Fee(bytes)": {
+        "params": {
+          "_data": "Unsigned RLP encoded tx, 6 elements"
+        },
+        "returns": {
+          "_0": "L1 fee that should be paid for the tx"
+        }
+      },
+      "getL1GasUsed(bytes)": {
+        "params": {
+          "_data": "Unsigned RLP encoded tx, 6 elements"
+        },
+        "returns": {
+          "_0": "Amount of L1 gas used for a transaction"
+        }
+      },
+      "init(bytes)": {
+        "details": "This function is called by the deployer/factory when creating a contract",
+        "params": {
+          "initPayload": "abi encoded payload to use for contract initilaization"
+        }
+      },
+      "setDecimals(uint256)": {
+        "params": {
+          "_decimals": "New decimals"
+        }
+      },
+      "setGasPrice(uint256)": {
+        "params": {
+          "_gasPrice": "New l2 gas price."
+        }
+      },
+      "setL1BaseFee(uint256)": {
+        "params": {
+          "_baseFee": "New l1 base fee"
+        }
+      },
+      "setOverhead(uint256)": {
+        "params": {
+          "_overhead": "New overhead"
+        }
+      },
+      "setScalar(uint256)": {
+        "params": {
+          "_scalar": "New scalar"
+        }
+      }
+    },
+    "title": "OVM_GasPriceOracle",
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {
+      "getL1Fee(bytes)": {
+        "notice": "Computes the L1 portion of the fee based on the size of the RLP encoded tx and the current l1BaseFee"
+      },
+      "getL1GasUsed(bytes)": {
+        "notice": "Computes the amount of L1 gas used for a transaction The overhead represents the per batch gas overhead of posting both transaction and state roots to L1 given larger batch sizes. 4 gas for 0 byte https://github.com/ethereum/go-ethereum/blob/9ada4a2e2c415e6b0b51c50e901336872e028872/params/protocol_params.go#L33 16 gas for non zero byte https://github.com/ethereum/go-ethereum/blob/9ada4a2e2c415e6b0b51c50e901336872e028872/params/protocol_params.go#L87 This will need to be updated if calldata gas prices change Account for the transaction being unsigned Padding is added to account for lack of signature on transaction 1 byte for RLP V prefix 1 byte for V 1 byte for RLP R prefix 32 bytes for R 1 byte for RLP S prefix 32 bytes for S Total: 68 bytes of padding"
+      },
+      "init(bytes)": {
+        "notice": "Used internally to initialize the contract instead of through a constructor"
+      },
+      "setDecimals(uint256)": {
+        "notice": "Allows the owner to modify the decimals."
+      },
+      "setGasPrice(uint256)": {
+        "notice": "Allows the owner to modify the l2 gas price."
+      },
+      "setL1BaseFee(uint256)": {
+        "notice": "Allows the owner to modify the l1 base fee."
+      },
+      "setOverhead(uint256)": {
+        "notice": "Allows the owner to modify the overhead."
+      },
+      "setScalar(uint256)": {
+        "notice": "Allows the owner to modify the scalar."
+      }
+    },
+    "version": 1
+  },
+  "storageLayout": {
+    "storage": [
+      {
+        "astId": 34059,
+        "contract": "contracts/module/OVM_GasPriceOracle.sol:OVM_GasPriceOracle",
+        "label": "gasPrice",
+        "offset": 0,
+        "slot": "0",
+        "type": "t_uint256"
+      },
+      {
+        "astId": 34061,
+        "contract": "contracts/module/OVM_GasPriceOracle.sol:OVM_GasPriceOracle",
+        "label": "l1BaseFee",
+        "offset": 0,
+        "slot": "1",
+        "type": "t_uint256"
+      },
+      {
+        "astId": 34063,
+        "contract": "contracts/module/OVM_GasPriceOracle.sol:OVM_GasPriceOracle",
+        "label": "overhead",
+        "offset": 0,
+        "slot": "2",
+        "type": "t_uint256"
+      },
+      {
+        "astId": 34065,
+        "contract": "contracts/module/OVM_GasPriceOracle.sol:OVM_GasPriceOracle",
+        "label": "scalar",
+        "offset": 0,
+        "slot": "3",
+        "type": "t_uint256"
+      },
+      {
+        "astId": 34067,
+        "contract": "contracts/module/OVM_GasPriceOracle.sol:OVM_GasPriceOracle",
+        "label": "decimals",
+        "offset": 0,
+        "slot": "4",
+        "type": "t_uint256"
+      }
+    ],
+    "types": {
+      "t_uint256": {
+        "encoding": "inplace",
+        "label": "uint256",
+        "numberOfBytes": "32"
+      }
+    }
+  }
+}

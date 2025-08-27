@@ -1,0 +1,56 @@
+{
+  "name": "eywa-contracts",
+  "version": "0.0.1",
+  "description": "Eywa smart-contracts",
+  "main": "index.js",
+  "scripts": {
+    "compile": "hardhat compile",
+    "coverage": "env COVERAGE=true hardhat coverage",
+    "gas-report": "env ENABLE_GAS_REPORT=true npm run test",
+    "commit": "./node_modules/cz-customizable/standalone.js",
+    "postinstall": "node ./utils/check-version.js",
+    "e2e:local": "export TYPE_TEST=local && npx hardhat test ./test/integration/e2e.test.js",
+    "e2e:testnet": "export TYPE_TEST=testnet && npx hardhat test ./test/integration/e2e.test.js",
+    "clean:ts": "hardhat --config ts-hardhat.config.ts clean",
+    "compile:ts": "hardhat --config ts-hardhat.config.ts compile --force",
+    "test:ts": "npm run hh:compile:ts && ts-mocha --exit -p ./tsconfig.json ./test/{,**}/*.test.ts",
+    "test:typecast": "hardhat --config ts-hardhat.config.ts test ./utils/typecast.test.ts",
+    "test:solana:calldata": "hardhat --config ts-hardhat.config.ts test --no-compile ./test/solana/solana-calldata.test.ts",
+    "prettier": "prettier --write 'contracts/**/*.sol'"
+  },
+  "author": "DigiU team",
+  "license": "MIT",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-network-helpers": "^1.0.9",
+    "@nomiclabs/hardhat-ethers": "^2.2.3",
+    "@nomiclabs/hardhat-etherscan": "^3.1.7",
+    "@nomiclabs/hardhat-ganache": "^2.0.1",
+    "@nomiclabs/hardhat-truffle5": "^2.0.7",
+    "@nomiclabs/hardhat-vyper": "^3.0.5",
+    "@nomiclabs/hardhat-waffle": "^2.0.6",
+    "@nomiclabs/hardhat-web3": "^2.0.0",
+    "@openzeppelin/test-helpers": "^0.5.16",
+    "@truffle/hdwallet-provider": "^2.1.15",
+    "chai": "^4.3.10",
+    "dotenv": "^16.3.1",
+    "eslint": "^8.51.0",
+    "ethereum-waffle": "^4.0.10",
+    "ethereumjs-abi": "^0.6.8",
+    "ethers": "^5.7.2",
+    "hardhat": "^2.18.2",
+    "hardhat-contract-sizer": "^2.10.0",
+    "hardhat-dependency-compiler": "github:philippine-lime/hardhat-dependency-compiler",
+    "hardhat-gas-reporter": "^1.0.9",
+    "merkletreejs": "^0.3.10",
+    "solhint": "^3.6.2",
+    "solhint-plugin-prettier": "^0.0.5",
+    "solidity-coverage": "^0.8.5",
+    "hardhat-change-network": "^0.0.7"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.9.6"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}

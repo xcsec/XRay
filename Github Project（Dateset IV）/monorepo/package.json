@@ -1,0 +1,38 @@
+{
+  "name": "@nomad-xyz/monorepo",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "bootstrap": "yarn build:accumulator-cli && yarn workspaces foreach -Apvt --exclude @nomad-xyz/deploy run bootstrap",
+    "bootup": "yarn local-environment run bootup",
+    "build": "yarn build:accumulator-cli && yarn workspaces foreach -Apvt --exclude @nomad-xyz/deploy run build",
+    "build:accumulator-cli": "cd scripts && ./build-acli.sh",
+    "chain-ops": "yarn workspace @nomad-xyz/chain-ops",
+    "compile": "yarn workspaces foreach -Apvt --exclude @nomad-xyz/deploy run compile",
+    "contracts-bridge": "yarn workspace @nomad-xyz/contracts-bridge",
+    "contracts-core": "yarn workspace @nomad-xyz/contracts-core",
+    "contracts-ops": "yarn workspace @nomad-xyz/contracts-ops",
+    "contracts-router": "yarn workspace @nomad-xyz/contracts-router",
+    "deploy": "yarn workspace @nomad-xyz/deploy",
+    "gen-proof": "scripts/accumulator-cli",
+    "indexer": "yarn workspace @nomad-xyz/indexer",
+    "lint": "yarn workspaces foreach -Apv --exclude @nomad-xyz/indexer run lint",
+    "local-environment": "yarn workspace @nomad-xyz/local-environment",
+    "multi-provider": "yarn workspace @nomad-xyz/multi-provider",
+    "nomad-cli": "yarn workspace @nomad-xyz/nomad-cli",
+    "prettier": "yarn workspaces foreach -Apvt run prettier",
+    "sdk": "yarn workspace @nomad-xyz/sdk",
+    "sdk-bridge": "yarn workspace @nomad-xyz/sdk-bridge",
+    "sdk-govern": "yarn workspace @nomad-xyz/sdk-govern",
+    "snapshot": "yarn workspaces foreach -Apvt --include @nomad-xyz/contracts-core --include @nomad-xyz/contracts-bridge run snapshot",
+    "snapshot:check": "yarn workspaces foreach -Apvt --include @nomad-xyz/contracts-core --include @nomad-xyz/contracts-bridge run snapshot:check",
+    "storage-inspect:check": "yarn workspaces foreach -Apvi --include @nomad-xyz/contracts-core --include @nomad-xyz/contracts-bridge --include @nomad-xyz/contracts-router run storage-inspect:check",
+    "storage-inspect:generate": "yarn workspaces foreach -Apvi --include @nomad-xyz/contracts-core --include @nomad-xyz/contracts-bridge --include @nomad-xyz/contracts-router run storage-inspect:generate",
+    "test:coverage": "yarn workspaces foreach -Apvi run test:coverage",
+    "test:integration": "yarn local-environment test:integration",
+    "test:unit": "yarn workspaces foreach -Apvt --exclude @nomad-xyz/deploy --exclude @nomad-xyz/contracts-ops run test:unit"
+  },
+  "packageManager": "yarn@3.2.0"
+}

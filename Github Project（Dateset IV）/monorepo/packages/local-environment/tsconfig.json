@@ -1,0 +1,25 @@
+{
+  "extends": "../tsconfig.package.json",
+  "compilerOptions": {
+    "outDir": "dist",
+    "rootDir": "src",
+  },
+  "exclude": [
+    "node_modules",
+    "dist",
+    "src/tmp.ts",
+    "output",
+    "hardhat",
+    "tests"
+  ],
+  "include": [
+    "src/**/*.ts",
+  ],
+  "references": [
+    { "path": "../sdk" },
+    { "path": "../sdk-bridge" },
+    { "path": "../contracts-core" },
+    { "path": "../deploy" },
+  ]
+}
+  

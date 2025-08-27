@@ -1,0 +1,21 @@
+{
+  "name": "bridge",
+  "version": "1.0.0",
+  "repository": "https://github.com/polischain/bridge.git",
+  "author": "eabz <eabz@polispay.org>",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "format": "prettier --write '**/*.{ts,tsx}'",
+    "oracle": "yarn workspace @bridge/oracle start",
+    "ui": "yarn workspace @bridge/ui start"
+  },
+  "devDependencies": {
+    "@types/node": "16.11.13",
+    "typescript": "4.5.4",
+    "prettier": "2.5.1"
+  }
+}

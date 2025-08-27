@@ -1,0 +1,32 @@
+{
+  "bsc": {
+    "threshold": 10
+  },
+  "eth": {
+    "threshold": 10
+  },
+  "avalanche": {
+    "threshold": 10
+  },
+  "mantle": {
+    "threshold": 10
+  },
+  "polygon": {
+    "threshold": 10
+  },
+  "boba_bnb": {
+    "threshold": 10
+  },
+  "boba_eth": {
+    "threshold": 10
+  },
+  "boba_avax": {
+    "threshold": 10
+  },
+  "telos": {
+    "threshold": 10
+  },
+  "fork": {
+    "threshold": 10
+  }
+}

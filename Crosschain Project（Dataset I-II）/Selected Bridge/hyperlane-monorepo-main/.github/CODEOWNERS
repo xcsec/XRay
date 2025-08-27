@@ -1,0 +1,26 @@
+# Package owners
+
+## Contracts
+solidity/ @yorhodes @ltyu @larryob
+starknet/ @yorhodes @troykessler
+
+## Agents
+rust/ @ameten @kamiyaa @yjamin
+
+## SDK
+typescript/utils @yorhodes @ltyu @paulbalaji @xaroz @xeno097 @antigremlin
+typescript/sdk @yorhodes @ltyu @paulbalaji @xaroz @xeno097 @antigremlin
+typescript/widgets @xaroz @cmcewen @antigremlin
+
+## CLI
+typescript/cli @yorhodes @ltyu @xeno097 @antigremlin
+
+## Infra
+typescript/infra @paulbalaji @Mo-Hussain
+
+## Cosmos
+typescript/cosmos-sdk @troykessler @yjamin
+typescript/cosmos-types @troykessler @yjamin
+
+## CCIP Server
+typescript/ccip-server @Mo-Hussain @nambrot

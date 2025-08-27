@@ -1,0 +1,73 @@
+{
+  "name": "@nomad-xyz/nomad-cli",
+  "version": "0.0.0",
+  "description": "oclif example Hello World CLI",
+  "keywords": [
+    "oclif"
+  ],
+  "homepage": "https://github.com/nomad-xyz/monorepo",
+  "bugs": "https://github.com/nomad-xyz/monorepo/issues",
+  "repository": "nomad-xyz/monorepo",
+  "license": "MIT",
+  "author": "Imti Majeed @Imti",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": "./bin/run",
+  "files": [
+    "/bin",
+    "/dist",
+    "/npm-shrinkwrap.json",
+    "/oclif.manifest.json"
+  ],
+  "scripts": {
+    "build": "shx rm -rf dist && tsc -b",
+    "cli": "./bin/run",
+    "cli:dev": "./bin/dev",
+    "generate:command": "oclif generate:command",
+    "lint": "eslint --fix ./src ./tests",
+    "prepack": "yarn build && oclif manifest && oclif readme",
+    "postpack": "shx rm -f oclif.manifest.json",
+    "prettier": "prettier --write ./src ./tests",
+    "posttest": "yarn lint",
+    "test:unit": "jest",
+    "version": "oclif readme && git add README.md"
+  },
+  "dependencies": {
+    "@oclif/core": "^1.13.10",
+    "@oclif/plugin-help": "^5",
+    "@oclif/plugin-plugins": "^2.0.1",
+    "@oclif/test": "^2.1.1",
+    "execa": "^5.1.1"
+  },
+  "devDependencies": {
+    "@types/jest": "^28.1.7",
+    "@types/node": "^16.9.4",
+    "eslint": "^7.32.0",
+    "eslint-config-oclif": "^4",
+    "eslint-config-oclif-typescript": "^1.0.2",
+    "eslint-config-prettier": "^8.3.0",
+    "globby": "^11",
+    "jest": "^28.1.3",
+    "oclif": "^3",
+    "prettier": "^2.4.1",
+    "shx": "^0.3.3",
+    "ts-jest": "^28.0.8",
+    "ts-node": "^10.2.1",
+    "tslib": "^2.3.1",
+    "typescript": "^4.4.3"
+  },
+  "engines": {
+    "node": ">=12.0.0"
+  },
+  "oclif": {
+    "bin": "nomad-cli",
+    "dirname": "nomad-cli",
+    "commands": "./dist/commands",
+    "plugins": [
+      "@oclif/plugin-help",
+      "@oclif/plugin-plugins"
+    ],
+    "topicSeparator": " "
+  }
+}

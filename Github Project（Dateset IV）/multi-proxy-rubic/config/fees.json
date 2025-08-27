@@ -1,0 +1,149 @@
+{
+  "config": {
+    "maxRubicTokenFee": 250000,
+    "feeTreasury": {
+      "mainnet": "0x60745F5A9742FE905BbDE2F57808416edf2B8696",
+      "bsc": "0x60745F5A9742FE905BbDE2F57808416edf2B8696",
+      "polygon": "0x60745F5A9742FE905BbDE2F57808416edf2B8696",
+      "arbitrum": "0x60745F5A9742FE905BbDE2F57808416edf2B8696",
+      "optimism": "0x60745F5A9742FE905BbDE2F57808416edf2B8696",
+      "fantom": "0x60745F5A9742FE905BbDE2F57808416edf2B8696",
+      "avalanche": "0x60745F5A9742FE905BbDE2F57808416edf2B8696",
+      "moonriver": "0x60745F5A9742FE905BbDE2F57808416edf2B8696",
+      "cronos": "0x60745F5A9742FE905BbDE2F57808416edf2B8696",
+      "telos": "0x60745F5A9742FE905BbDE2F57808416edf2B8696",
+      "astar": "0x60745F5A9742FE905BbDE2F57808416edf2B8696",
+      "pulse": "0x60745F5A9742FE905BbDE2F57808416edf2B8696",
+      "zkSync": "0x60745F5A9742FE905BbDE2F57808416edf2B8696",
+      "aurora": "0x60745F5A9742FE905BbDE2F57808416edf2B8696",
+      "linea": "0x60745F5A9742FE905BbDE2F57808416edf2B8696",
+      "base": "0x60745F5A9742FE905BbDE2F57808416edf2B8696",
+      "zkEvm": "0x60745F5A9742FE905BbDE2F57808416edf2B8696",
+      "mantle": "0x60745F5A9742FE905BbDE2F57808416edf2B8696",
+      "scroll": "0x60745F5A9742FE905BbDE2F57808416edf2B8696",
+      "zkSyncTestnet": "0x60745F5A9742FE905BbDE2F57808416edf2B8696",
+      "manta": "0x60745F5A9742FE905BbDE2F57808416edf2B8696",
+      "metis": "0x60745F5A9742FE905BbDE2F57808416edf2B8696",
+      "rootstock": "0x60745F5A9742FE905BbDE2F57808416edf2B8696",
+      "blast": "0x60745F5A9742FE905BbDE2F57808416edf2B8696",
+      "horizen": "0x60745F5A9742FE905BbDE2F57808416edf2B8696",
+      "kroma": "0x60745F5A9742FE905BbDE2F57808416edf2B8696",
+      "merlin": "0x60745F5A9742FE905BbDE2F57808416edf2B8696",
+      "mode": "0x60745F5A9742FE905BbDE2F57808416edf2B8696",
+      "zkfair": "0x60745F5A9742FE905BbDE2F57808416edf2B8696",
+      "zetachain": "0x60745F5A9742FE905BbDE2F57808416edf2B8696",
+      "zklink": "0x60745F5A9742FE905BbDE2F57808416edf2B8696",
+      "xlayer": "0x60745F5A9742FE905BbDE2F57808416edf2B8696",
+      "taiko": "0x60745F5A9742FE905BbDE2F57808416edf2B8696",
+      "testbera": "0x60745F5A9742FE905BbDE2F57808416edf2B8696"
+    },
+    "hardhat": {
+      "maxFixedNativeFee": 0
+    },
+    "mainnet": {
+      "maxFixedNativeFee": 100000000000000000
+    },
+    "polygon": {
+      "maxFixedNativeFee": 200000000000000000000
+    },
+    "bsc": {
+      "maxFixedNativeFee": 1000000000000000000
+    },
+    "arbitrum": {
+      "maxFixedNativeFee": 100000000000000000
+    },
+    "optimism": {
+      "maxFixedNativeFee": 100000000000000000
+    },
+    "fantom": {
+      "maxFixedNativeFee": 400000000000000000000
+    },
+    "avalanche": {
+      "maxFixedNativeFee": 10000000000000000000
+    },
+    "moonriver": {
+      "maxFixedNativeFee": 20000000000000000000
+    },
+    "moonbeam": {
+      "maxFixedNativeFee": 100000000000000000000
+    },
+    "cronos": {
+      "maxFixedNativeFee": 5000000000000000000000
+    },
+    "telos": {
+      "maxFixedNativeFee": 1000000000000000000000
+    },
+    "zkSync": {
+      "maxFixedNativeFee": 100000000000000000
+    },
+    "zkSyncTestnet": {
+      "maxFixedNativeFee": 100000000000000000
+    },
+    "astar": {
+      "maxFixedNativeFee": 5300000000000000000000
+    },
+    "pulse": {
+      "maxFixedNativeFee": 2084636000000000000000000
+    },
+    "aurora": {
+      "maxFixedNativeFee": 100000000000000000
+    },
+    "linea": {
+      "maxFixedNativeFee": 100000000000000000
+    },
+    "base": {
+      "maxFixedNativeFee": 100000000000000000
+    },
+    "zkEvm": {
+      "maxFixedNativeFee": 100000000000000000
+    },
+    "mantle": {
+      "maxFixedNativeFee": 500000000000000000000
+    },
+    "scroll": {
+      "maxFixedNativeFee": 100000000000000000
+    },
+    "manta": {
+      "maxFixedNativeFee": 100000000000000000
+    },
+    "metis": {
+      "maxFixedNativeFee": 20000000000000000000
+    },
+    "rootstock": {
+      "maxFixedNativeFee": 1724137931000000
+    },
+    "blast": {
+      "maxFixedNativeFee": 100000000000000000
+    },
+    "horizen": {
+      "maxFixedNativeFee": 10000000000000000000
+    },
+    "kroma": {
+      "maxFixedNativeFee": 100000000000000000
+    },
+    "merlin": {
+      "maxFixedNativeFee": 1724137931000000
+    },
+    "mode": {
+      "maxFixedNativeFee": 100000000000000000
+    },
+    "zkfair": {
+      "maxFixedNativeFee": 100000000000000000000
+    },
+    "zetachain": {
+      "maxFixedNativeFee": 100000000000000000000
+    },
+    "zklink": {
+      "maxFixedNativeFee": 100000000000000000
+    },
+    "xlayer": {
+      "maxFixedNativeFee": 2000000000000000000
+    },
+    "taiko": {
+      "maxFixedNativeFee": 100000000000000000
+    },
+    "testbera": {
+      "maxFixedNativeFee": 50000000000000000000
+    }
+  }
+}

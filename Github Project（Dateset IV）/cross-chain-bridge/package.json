@@ -1,0 +1,19 @@
+{
+  "name": "cross-chain",
+  "version": "1.0.0",
+  "description": "A cross chain application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "collins ihezie",
+  "license": "ISC",
+  "devDependencies": {
+    "@nomiclabs/hardhat-web3": "^2.0.0",
+    "@nomicfoundation/hardhat-toolbox": "^1.0.2",
+    "hardhat": "^2.11.1"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.7.3"
+  }
+}

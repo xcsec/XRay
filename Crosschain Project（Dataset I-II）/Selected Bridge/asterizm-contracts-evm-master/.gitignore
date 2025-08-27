@@ -1,0 +1,20 @@
+node_modules
+.env
+coverage
+coverage.json
+typechain
+typechain-types
+.idea
+.deps
+.DS_Store
+.openzeppelin
+fireblocks_key.csr
+
+#Hardhat files
+cache
+artifacts
+contracts/artifacts
+contracts/base/artifacts
+contracts/demo/artifacts
+contracts/projects/artifacts
+contracts/interfaces/artifacts

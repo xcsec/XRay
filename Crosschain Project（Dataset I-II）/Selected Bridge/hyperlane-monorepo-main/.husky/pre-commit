@@ -1,0 +1,34 @@
+#!/usr/bin/env sh
+
+if [ ! -f "$(dirname -- "$0")/_/husky.sh" ]; then
+    echo "$(dirname -- "$0")/_/husky.sh" is missing >&2
+    echo 'did you make sure to run `yarn install`?' >&2
+    exit 1
+fi
+
+. "$(dirname -- "$0")/_/husky.sh"
+
+# If not in GitHub Actions, check for potential secrets in staged files
+if [ "$GITHUB_ACTIONS" != "true" ]; then
+    echo "🔍 Checking for potential secrets in staged files..."
+    if git diff --cached --name-only | xargs gitleaks protect --staged --verbose --redact --config .gitleaks.toml; then
+        echo "✅ No secrets detected"
+    else
+        echo "❌ Potential secrets detected in your changes!"
+        echo "Please remove any secrets, credentials, or sensitive information before committing."
+        exit 1
+    fi
+fi
+
+yarn lint-staged
+
+echo "📝 If you haven't yet, please add a changeset for your changes via 'yarn changeset'"
+
+# if any *.rs files have changed
+if git diff --staged --exit-code --name-only | grep -q -E ".*\.rs$"; then
+    echo "Running cargo fmt pre-commit hook for rust/main"
+    cargo fmt --all --check --manifest-path rust/main/Cargo.toml
+
+    echo "Running cargo fmt pre-commit hook for rust/sealevel"
+    cargo fmt --all --check --manifest-path rust/sealevel/Cargo.toml
+fi
